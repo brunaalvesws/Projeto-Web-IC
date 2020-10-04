@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset = "UTF-8"/>
+    <title>Bruna Alves Wanderley de Siqueira</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script>
+        $(document).ready(function(){
+          $(".mostrarInfo").click(function(){
+            el = $(this).data('element');
+            $(el).toggle();
+          });
+        });
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="barra-esquerda">
+                <div class="barra-esquerda-cima">
+                    <header class="header">
+                        <div class="nome">
+                            <h4>Bruna Alves</h4>
+                        </div>
+                        <div class="Sobre">
+                            <a href="#" data-element="#Sobre" class="mostrarInfo">Sobre</a>
+                        </div>
+                        <div class="TopicosAcademicos">
+                            <a href="#" data-element="#TopicosAcademicos" class="mostrarInfo">Tópicos Acadêmicos</a>
+                        </div>
+                        <div class="TopicosPessoais">
+                            <a href="#" data-element="#TopicosPessoais" class="mostrarInfo">Tópicos Pessoais</a>
+                        </div>
+                    </header>
+                </div>
+                <div class="barra-esquerda-baixo">
+                    <p>Contato: <br/> baws@cin.ufpe.br <br/> brunawsiqueira@gmail.com<br/>@brunaalvesws</p>
+                    <img class="logo" src="./arquivos/Logo-ufpe-2-2.png" alt="Logo da UFPE">
+                    <img class="logocin" src="./arquivos/logo.png" alt="Logo do CIn">
+            </div>
+        </div>
+    </div>
+    
+    <main class="conteudo">
+        <section class="section" id="secaoSobre">
+            <div class="section-conteudo" id = "Sobre">
+                <h1>Sobre</h1><br/><br/>
+                <img class="perfil" src="./arquivos/fotoperfil2.jpg" alt="Foto de Perfil"><br/>
+                <h4><i>Bruna Alves Wanderley de Siqueira</i> tem 19 anos, é estudante de Ciência da Computação 
+                    na Universidade Federal de Pernambuco. Atualmente, cursa o 1° Período de forma remota. Entusiasta
+                    da matemática, busca conseguir transformar o ambiente ao seu redor com as ferramentas que essa Ciência
+                    e a Computação podem oferecer. Tem 5 gatos, adora cozinhar e desenhar e é integrante do grupo de teatro 
+                    musical Confluir, do Conservatório Pernambucano de Música e toca piano.<br/><br/><br/>Site desenvolvido para o Projeto 
+                    Web de Introdução a Computação no semestre 2020.3</h4>
+            </div>
+        </section>
+        <section class="section" id="secaoTopicosAcademicos">
+            <div class="section-conteudo" id="TopicosAcademicos" style="display:none;">
+                <h1>Tópicos Acadêmicos</h1><br/>
+                <h2>Formação</h2><br/>
+                <ul style="list-style: circle; font-size: large;">
+                    <li>Ensino Fundamental II e Ensino Médio no Colégio de Aplicação, Universidade Federal de Pernambuco, Brasil</li>
+                    <li>Graduanda em Ciência da Computação, Universidade Federal de Pernambuco, Brasil</li>
+                    <li>Curso de Desgin Gráfico e Arte Digital Start 5.0 em andamento na Escola Saga</li>
+                </ul><br/>
+                <h2>Olimpíadas de Conhecimentos</h2>
+                <style>
+                    .tooltip .tooltiptext {
+                        visibility: hidden;
+                        width: 120px;
+                        background-color: black;
+                        color: #fff;
+                        text-align: center;
+                        padding: 5px 0;
+                    
+                        position: absolute;
+                        z-index: 1;
+                        top: -5px;
+                        left: 105%;
+                    }
+                      
+                    .tooltip:hover .tooltiptext {
+                        visibility: visible;
+                    }
+                    </style>
+                    <div class="tooltip"> Olimpíada Brasileira de Matemática das Escolas Públicas - OBMEP
+                        <span class="tooltiptext">Medalha de Ouro, Menção Honrosa</span>
+                    </div>
+                    <div class="tooltip"> Olimpíada Brasileira de Física das Escolas Públicas - OBFEP
+                        <span class="tooltiptext">Medalha de Bronze</span>
+                    </div>
+                    <div class="tooltip"> Olimpíada Brasileira de Robótica - OBR
+                        <span class="tooltiptext">Medalha de Bronze, Medalha de Prata</span>
+                    </div>
+                    <div class="tooltip">Olimpíada Norte/Nordeste de Química - ONNEQ
+                        <span class="tooltiptext">Menção Honrosa</span>
+                    </div>
+                    <div class="tooltip">Olimpíada Pernambucana de Química - OPEQ
+                        <span class="tooltiptext">Medalha de Prata</span>
+                    </div>
+                <br/>
+                <h2>Projeto de Pesquisa PIBIC-EM (2018-2019)</h2>
+                    <embed src="./arquivos/Relatório Final PIBIC_versão8.pdf" width="760" height="500"/><br/><br/>
+                    <a href="http://lattes.cnpq.br/3791144694106184" target=" blank">Acesse meu currículo Lattes aqui</a>
+            </div>
+        </section>
+        <section class="section" id="secaoTopicosPessoais">
+            <div class="section-conteudo" id="TopicosPessoais" style="display:none;">
+                <h1>Tópicos Pessoais</h1>
+                <a href="https://www.instagram.com/brunaalvesws/" target=" blank">Acesse meu Instagram pessoal aqui</a><br/>
+                <a href="https://www.instagram.com/brubruletrinhas/" target=" blank">Acesse meu Instagram de desenhos aqui</a><br/>
+                <h3>Alguns desenhos meus...</h3><br/>
+                <img class="desenhos" src="./arquivos/desenho (2).jpg" alt="Desenhos">
+                <img class="desenhos" src="./arquivos/desenho.jpg" alt="Desenhos2">
+                <img class="desenhos" src="./arquivos/feelingblue.png" alt="Desenhos3">
+                <img class="desenhos" src="./arquivos/code like a girl.jpg" alt="Desenhos4">
+                <br/><h3>Conheça meus gatos!</h3><br/>
+                <img class="gatos" src="./arquivos/ze e eu.jpg" alt="Zé e eu" width="150" height="300">
+                <img class="gatos" src="./arquivos/ze.jpg" alt="Zé" width="150" height="300">
+                <h4> Esse é Zé</h4><br/>
+                <img class="gatos" src="./arquivos/nina e eu.jpg" alt="Nina e eu" width="150" height="300">
+                <img class="gatos" src="./arquivos/nina2.jpg" alt="Nina" width="150" height="300">
+                <h4>Essa é Nina</h4><br/>
+                <img class="gatos" src="./arquivos/carmen e eu.jpg" alt="Carmen e eu" width="500" height="300">
+                <img class="gatos" src="./arquivos/carmen.jpg" alt="Carmen" width="170" height="300">
+                <h4>Essa é Carmen</h4><br/>
+                <img class="gatos" src="./arquivos/doiss e eu.jpg" alt="Doiss e eu" width="170" height="300">
+                <img class="gatos" src="./arquivos/doiss.jpg" alt="Doiss" width="150" height="300">
+                <h4>Essa é Doiss</h4><br/>
+                <img class="gatos" src="./arquivos/floffytihina2.jpg" alt="Floffytinha" width="150" height="300">
+                <img class="gatos" src="./arquivos/floffytinha.jpg" alt="Floffytinha2" width="150" height="300">
+                <h4>Essa é Floffytinha</h4><br/>
+                <h3>Atuo no Núcleo Espírita Mensageiros do Lar como trabalhadora</h3><br/>
+                <h3>Já me apresentei no teatro com o Grupo Confluir</h3><br/>
+                <img class="coral" src="./arquivos/bruna2.jpg" alt="No teatro" width="150" height="250">
+                <img class="coral" src="./arquivos/coral.jpg" alt="No teatro2" width="450" height="250">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+

@@ -1,0 +1,149 @@
+*{
+    font-family: 'Sansita Swashed', cursive;
+}
+
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #48ACF0;
+}
+
+.container{
+    display: flex;
+}
+
+/*menu das páginas*/
+.barra-esquerda {
+    display: block;
+}
+
+.barra-esquerda-cima {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60%;
+    background-color: #F4D35E;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.barra-esquerda-baixo {
+    position: fixed;
+    top: 60%;
+    left: 0;
+    height: 40%;
+    background-color: #95D9C3;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    font-size: 17px;
+}
+
+.logo {
+    max-width:100px;
+    max-height:75px;
+    width: auto;
+    height: auto;
+}
+
+.logocin {
+    max-width:100px;
+    max-height:75px;
+    width: auto;
+    height: auto;
+}
+
+.perfil {
+    max-width:200px;
+    max-height:200px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+}
+
+.header {
+    font-size: 20px;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    transition: transform 1s;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.Sobre {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.TopicosPessoais {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.TopicosAcademicos{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.nome {
+    text-align: center;
+}
+
+
+.conteudo {
+    position: relative;
+    left: 20%;
+    right: 50%;
+    margin: 1rem;
+    width: 75%;
+    text-align: justify;
+    justify-content: space-around;
+}
+
+
+/*conteudo da página sobre*/
+#Sobre {
+    font-size: larger;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+/*conteudo da página pessoais*/
+.desenhos {
+    max-width:200px;
+    max-height:200px;
+    width: auto;
+    height: auto;
+    border: 5px solid #F4D35E;
+    margin: 1rem;
+}
+
+.gatos.coral {
+    border: 5px solid #F4D35E;
+    margin: 1rem;
+}
+
+.coral {
+    border: 5px solid #F4D35E;
+    margin: 1rem;
+}
+
+#TopicosPessoais img:hover {
+    transition: transform 1s;
+    transform: scale(1.3);
+}
+
+
+

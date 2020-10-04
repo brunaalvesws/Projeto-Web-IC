@@ -9,9 +9,19 @@
     <script>
         $(document).ready(function(){
           $(".mostrarInfo").click(function(){
-            el = $(this).data('element');
-            $(el).toggle();
-          });
+			el = $(this).data('element');		
+			 $('.mostrarInfo').each(function(index, element){
+			 x = $(this).data('element');
+			 
+				 if(x == el){
+					 $(el).show();
+				 }else{
+					$(x).hide();
+				 }
+			});          
+          
+          });		  
+			  
         });
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
@@ -52,7 +62,7 @@
                 <h4><i>Bruna Alves Wanderley de Siqueira</i> tem 19 anos, é estudante de Ciência da Computação 
                     na Universidade Federal de Pernambuco. Atualmente, cursa o 1° Período de forma remota. Entusiasta
                     da matemática, busca conseguir transformar o ambiente ao seu redor com as ferramentas que essa Ciência
-                    e a Computação podem oferecer. Tem 5 gatos, adora cozinhar e desenhar e é integrante do grupo de teatro 
+                    e a Computação podem oferecer. Tem 5 gatos, adora cozinhar e desenhar, é integrante do grupo de teatro 
                     musical Confluir, do Conservatório Pernambucano de Música e toca piano.<br/><br/><br/>Site desenvolvido para o Projeto 
                     Web de Introdução a Computação no semestre 2020.3</h4>
             </div>
@@ -64,43 +74,25 @@
                 <ul style="list-style: circle; font-size: large;">
                     <li>Ensino Fundamental II e Ensino Médio no Colégio de Aplicação, Universidade Federal de Pernambuco, Brasil</li>
                     <li>Graduanda em Ciência da Computação, Universidade Federal de Pernambuco, Brasil</li>
-                    <li>Curso de Desgin Gráfico e Arte Digital Start 5.0 em andamento na Escola Saga</li>
+                    <li>Cursando Desgin Gráfico e Arte Digital - Curso Start 5.0 na Escola Saga</li>
                 </ul><br/>
                 <h2>Olimpíadas de Conhecimentos</h2>
-                <style>
-                    .tooltip .tooltiptext {
-                        visibility: hidden;
-                        width: 120px;
-                        background-color: black;
-                        color: #fff;
-                        text-align: center;
-                        padding: 5px 0;
-                    
-                        position: absolute;
-                        z-index: 1;
-                        top: -5px;
-                        left: 105%;
-                    }
-                      
-                    .tooltip:hover .tooltiptext {
-                        visibility: visible;
-                    }
-                    </style>
-                    <div class="tooltip"> Olimpíada Brasileira de Matemática das Escolas Públicas - OBMEP
+                <ul style="list-style: circle; font-size: large;"></ul>
+                    <li><div class="tooltip"> Olimpíada Brasileira de Matemática das Escolas Públicas - OBMEP
                         <span class="tooltiptext">Medalha de Ouro, Menção Honrosa</span>
-                    </div>
-                    <div class="tooltip"> Olimpíada Brasileira de Física das Escolas Públicas - OBFEP
+                    </div></li>
+                    <li><div class="tooltip"> Olimpíada Brasileira de Física das Escolas Públicas - OBFEP
                         <span class="tooltiptext">Medalha de Bronze</span>
-                    </div>
-                    <div class="tooltip"> Olimpíada Brasileira de Robótica - OBR
+                    </div></li>
+                    <li><div class="tooltip"> Olimpíada Brasileira de Robótica - OBR
                         <span class="tooltiptext">Medalha de Bronze, Medalha de Prata</span>
-                    </div>
-                    <div class="tooltip">Olimpíada Norte/Nordeste de Química - ONNEQ
+                    </div></li>
+                    <li><div class="tooltip">Olimpíada Norte/Nordeste de Química - ONNEQ
                         <span class="tooltiptext">Menção Honrosa</span>
-                    </div>
-                    <div class="tooltip">Olimpíada Pernambucana de Química - OPEQ
+                    </div></li>
+                    <li><div class="tooltip">Olimpíada Pernambucana de Química - OPEQ
                         <span class="tooltiptext">Medalha de Prata</span>
-                    </div>
+                    </div></li>
                 <br/>
                 <h2>Projeto de Pesquisa PIBIC-EM (2018-2019)</h2>
                     <embed src="./arquivos/Relatório Final PIBIC_versão8.pdf" width="760" height="500"/><br/><br/>
